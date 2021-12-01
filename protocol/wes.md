@@ -6,6 +6,4 @@ fast all-in-one preprocessing for FastQ files
 
 
 # bwa
-
-
 conda install -c bioconda fastp
