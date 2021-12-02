@@ -36,7 +36,7 @@ Example:
 specify `-f fastq.gz` to force it transform `fastq` to `fastq.gz`
 ```
 # -p for PRJNA and SRR
-$ kingfisher get -p PRJNA504942 -m aws-http prefetch -f fastq.gz
+$ kingfisher get -p PRJNA504942 -m aws-http prefetch -f fastq.gz --download-threads 16 -t 16
 
 # -r for ERR
 $ kingfisher get -r ERR1739691 -m ena-ascp ena-ftp -f fasta
