@@ -24,7 +24,7 @@ $ echo 'export PATH=~/.aspera/connect/bin:$PATH' >> ~/.bashrc
 
 ## use
 
-The ERR, SRR, PRJNA code can be directly used here, thus you can get rid of the generating url and running wget step.
+The ERR, SRR, PRJNA code can be directly used here, thus you can get rid of the generating url and running wget repeat.
 
 The `ena-ascp` and `ena-ftp` methods are likely to fail in mainland due to EBI website banned by GFW and I recommend to use `aws-http`.
 
@@ -47,8 +47,8 @@ When using download and automatic extract, it tends to run into problems from ti
 
 ```
 $ kingfisher get -p PRJNA504942 -m aws-http prefetch -f sra --download-threads 16
-$ kingfisher extract --sra *.sra -f fastq.gz -t 16
 
+$ kingfisher extract --sra *.sra -f fastq.gz -t 16
 ```
 
 ### annotate
